@@ -9,18 +9,38 @@
 <body>
     <div class="container">
         <h1>Velkommen til Gæt et Tal</h1>
+        
+        <div class="tabs">
+            <button class="tab-link" onclick="openTab('player-guess')">Du gætter</button>
+            <button class="tab-link" onclick="openTab('computer-guess')">Computeren gætter</button>
+        </div>
 
-        <ul id="guesses">
-        </ul>
+        <div id="player-guess" class="tab-content">
+            <h2>Du gætter på et tal</h2>
+            <ul id="guesses">
+                <!-- Gættede tal fremvises her -->
+            </ul>
 
-        <form id="guesser">
-            <input type="number" id="guess" placeholder="Indtast dit gæt" required>
-            <button id="guess-button" type="submit">Gæt</button>
-        </form>
+            <form id="guesser">
+                <input type="number" id="guess" placeholder="Indtast dit gæt" required>
+                <button id="guess-button" type="submit">Gæt</button>
+            </form>
+            <button id="clear-button">Clear</button>
+        </div>
 
-        <button id="clear-button">Clear</button>
+        <!-- Computerens gæt section -->
+        <div id="computer-guess" class="tab-content" style="display:none;">
+    <h2>Computeren gætter på dit tal</h2>
+    <div id="computer-guess-output">
+        Computeren gætter på: <span id="current-guess"></span>
     </div>
+    <button id="too-low">For lavt</button>
+    <button id="correct">Korrekt</button>
+    <button id="too-high">For højt</button>
+    <button id="reset-button" style="display:none;">Start forfra</button> 
+</div>
 
-    <script src="script.js"></script>
+    <script src="player-guess.js"></script>
+    <script src="computer-guess.js"></script>
 </body>
 </html>

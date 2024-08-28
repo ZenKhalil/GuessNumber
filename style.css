@@ -57,5 +57,45 @@ ul#guesses li {
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
-    color: #fff;
+    color: #a79898;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #e68787;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.tab-link:hover {
+    background-color: #ccc;
+}
+
+.tab-link.active {
+    background-color: #7d5050;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #4e7d30;
+    border: 1px solid #6e4646;
+    margin-top: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0ad4e;
+    border: none;
+    cursor: pointer;
 }
