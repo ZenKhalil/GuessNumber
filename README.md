@@ -12,7 +12,7 @@ Welcome to **Gæt et Tal**, a simple number guessing game where either the playe
 
 ## Demo
 
-You can try the game live at: [Demo Link](https://guessnumber-rkf0.onrender.com)
+You can try the game live at: [Demo Link](https://guessnumber-rkf0.onrender.com) or Github Pages here: https://zenkhalil.github.io/GuessNumber/
 
 ## Features
 
